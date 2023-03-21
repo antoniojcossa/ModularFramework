@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-21T08:23:09 SAST" name="Suite" finished-at="2023-03-21T08:23:23 SAST" duration-ms="14001">
+    <groups>
+    </groups>
+    <test started-at="2023-03-21T08:23:09 SAST" name="Test" finished-at="2023-03-21T08:23:23 SAST" duration-ms="14001">
+      <class name="com.guru99.tests.LoginTests">
+        <test-method is-config="true" signature="preSetup()[pri:0, instance:com.guru99.tests.LoginTests@595b007d]" started-at="2023-03-21T08:23:09 SAST" name="preSetup" finished-at="2023-03-21T08:23:09 SAST" duration-ms="92" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preSetup -->
+        <test-method is-config="true" signature="stup()[pri:0, instance:com.guru99.tests.LoginTests@595b007d]" started-at="2023-03-21T08:23:09 SAST" name="stup" finished-at="2023-03-21T08:23:18 SAST" duration-ms="8916" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stup -->
+        <test-method signature="userLoginWithCorrectCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.guru99.tests.LoginTests@595b007d]" started-at="2023-03-21T08:23:18 SAST" name="userLoginWithCorrectCredentials" finished-at="2023-03-21T08:23:22 SAST" duration-ms="4631" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr136913]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Omn@12]]>
+              </value>
+            </param>
+          </params>
+          <exception class="junit.framework.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<... ...> but was:<......>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.ComparisonFailure: expected:<... ...> but was:<......>
+at junit.framework.Assert.assertEquals(Assert.java:81)
+at junit.framework.Assert.assertEquals(Assert.java:87)
+at com.guru99.tests.LoginTests.userLoginWithCorrectCredentials(LoginTests.java:20)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLoginWithCorrectCredentials -->
+        <test-method is-config="true" signature="postTestAction(org.testng.ITestResult)[pri:0, instance:com.guru99.tests.LoginTests@595b007d]" started-at="2023-03-21T08:23:22 SAST" name="postTestAction" finished-at="2023-03-21T08:23:22 SAST" duration-ms="240" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=userLoginWithCorrectCredentials status=FAILURE method=LoginTests.userLoginWithCorrectCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.guru99.tests.LoginTests@595b007d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postTestAction -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.guru99.tests.LoginTests@595b007d]" started-at="2023-03-21T08:23:22 SAST" name="tearDown" finished-at="2023-03-21T08:23:23 SAST" duration-ms="183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="postTearddown()[pri:0, instance:com.guru99.tests.LoginTests@595b007d]" started-at="2023-03-21T08:23:23 SAST" name="postTearddown" finished-at="2023-03-21T08:23:23 SAST" duration-ms="130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postTearddown -->
+      </class> <!-- com.guru99.tests.LoginTests -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
